@@ -3,60 +3,58 @@ import { useLanguage } from '../context/LanguageContext'
 const skillsData = {
   fr: {
     sysadmin: [
-      { name: 'Active Directory (AD DS, OU, GPO, PowerShell)', level: 85 },
-      { name: 'Windows Server 2019', level: 80 },
+      { name: 'Active Directory (AD DS, OU, GPO, PowerShell)', level: 80 },
+      { name: 'Windows Server 2019', level: 70 },
       { name: 'TCP/IP, DHCP, DNS, VLAN', level: 85 },
       { name: 'Configuration Cisco (routeurs/switches)', level: 75 },
-      { name: 'Virtualisation (VirtualBox)', level: 80 },
-      { name: 'Pare-feu & Sécurité réseau', level: 70 }
+      { name: 'Virtualisation (VirtualBox)', level: 95 },
+      { name: 'Pare-feu & Sécurité réseau', level: 65 }
     ],
     electricite: [
-      { name: 'Installation électrique BT', level: 90 },
-      { name: 'Lecture de schémas électriques', level: 85 },
-      { name: 'Diagnostic et dépannage', level: 85 },
+      { name: 'Installation électrique BT', level: 98 },
+      { name: 'Lecture de schémas électriques', level: 95 },
+      { name: 'Diagnostic et dépannage', level: 90 },
       { name: 'Tableaux électriques', level: 80 },
-      { name: 'Normes NF C 15-100', level: 75 }
+      { name: 'Normes NF C 15-100', level: 65 }
     ],
     dev: [
-      { name: 'React.js', level: 85 },
       { name: 'React Native', level: 75 },
-      { name: 'JavaScript (ES6+)', level: 80 },
+      { name: 'JavaScript ', level: 60 },
       { name: 'FastAPI (Backend)', level: 70 },
       { name: 'Docker', level: 75 },
       { name: 'Python', level: 70 },
-      { name: 'VS Code', level: 85 },
-      { name: 'Vercel (Hébergement)', level: 85 },
-      { name: 'Suite Microsoft Office', level: 80 },
-      { name: 'CCTV (NVR, DVR)', level: 85 }
+      { name: 'VS Code', level: 90 },
+      { name: 'Vercel (Hébergement)', level: 90 },
+      { name: 'Suite Microsoft Office', level: 95 },
+      { name: 'CCTV (NVR, DVR)', level: 95 }
     ]
   },
   en: {
     sysadmin: [
-      { name: 'Active Directory (AD DS, OU, GPO, PowerShell)', level: 85 },
-      { name: 'Windows Server 2019', level: 80 },
+      { name: 'Active Directory (AD DS, OU, GPO, PowerShell)', level: 80 },
+      { name: 'Windows Server 2019', level: 70 },
       { name: 'TCP/IP, DHCP, DNS, VLAN', level: 85 },
       { name: 'Cisco Configuration (routers/switches)', level: 75 },
-      { name: 'Virtualization (VirtualBox)', level: 80 },
-      { name: 'Firewall & Network Security', level: 70 }
+      { name: 'Virtualization (VirtualBox)', level: 95 },
+      { name: 'Firewall & Network Security', level: 65 }
     ],
     electricite: [
-      { name: 'Low Voltage Electrical Installation', level: 90 },
-      { name: 'Electrical Schematics Reading', level: 85 },
-      { name: 'Diagnostics & Troubleshooting', level: 85 },
+      { name: 'Low Voltage Electrical Installation', level: 98 },
+      { name: 'Electrical Schematics Reading', level: 95 },
+      { name: 'Diagnostics & Troubleshooting', level: 90 },
       { name: 'Electrical Panels', level: 80 },
-      { name: 'NF C 15-100 Standards', level: 75 }
+      { name: 'NF C 15-100 Standards', level: 65 }
     ],
     dev: [
-      { name: 'React.js', level: 85 },
       { name: 'React Native', level: 75 },
-      { name: 'JavaScript (ES6+)', level: 80 },
+      { name: 'JavaScript ', level: 60 },
       { name: 'FastAPI (Backend)', level: 70 },
       { name: 'Docker', level: 75 },
       { name: 'Python', level: 70 },
-      { name: 'VS Code', level: 85 },
-      { name: 'Vercel (Hosting)', level: 85 },
-      { name: 'Microsoft Office Suite', level: 80 },
-      { name: 'CCTV (NVR, DVR)', level: 85 }
+      { name: 'VS Code', level: 90 },
+      { name: 'Vercel (Hosting)', level: 90 },
+      { name: 'Microsoft Office Suite', level: 95 },
+      { name: 'CCTV (NVR, DVR)', level: 95 }
     ]
   }
 }

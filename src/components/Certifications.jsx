@@ -7,7 +7,14 @@ const certificationsData = {
     { title: "English for IT", issuer: "Cisco", link: "https://www.credly.com/badges/39a47c41-37a7-4674-b795-bbdd9782193f/public_url", skills: ["Anglais Technique", "IT Terminology"] },
     { title: "DeepLearning.AI", issuer: "Coursera", link: "https://www.coursera.org/account/accomplishments/records/EK71YQYCCF2Y", skills: ["Machine Learning", "IA", "Deep Learning"] },
     { title: "Google Gemini", issuer: "Google Developers", link: "https://developers.google.com/profile/badges/community/gear", skills: ["IA Générative", "Google AI"] },
-    { title: "Administration Active Directory", issuer: "Formation en LAB", link: "#", skills: ["Windows Server", "AD DS", "GPO", "PowerShell"] }
+    { title: "Administration Active Directory", issuer: "Formation en LAB", link: "#", skills: ["Windows Server", "AD DS", "GPO", "PowerShell"] },
+    // 🟢 NOUVELLE CERTIFICATION
+    { 
+      title: "Parcours professionnel d'Analyste en Cybersécurité et Défense", 
+      issuer: "Cisco", 
+      link: "https://www.credly.com/badges/8222401c-e488-46ff-84c1-69bfd5bdeed2/public_url", 
+      skills: ["Cybersécurité", "Analyse des risques", "Défense des réseaux", "Conformité"] 
+    }
   ],
   en: [
     { title: "Cisco CCNA", issuer: "Cisco", link: "https://www.credly.com/badges/91c1a666-bd75-419f-86cc-09a005029783/public_url", skills: ["Networking", "Routing", "Switching", "IPv4/IPv6"] },
@@ -15,7 +22,14 @@ const certificationsData = {
     { title: "English for IT", issuer: "Cisco", link: "https://www.credly.com/badges/39a47c41-37a7-4674-b795-bbdd9782193f/public_url", skills: ["Technical English", "IT Terminology"] },
     { title: "DeepLearning.AI", issuer: "Coursera", link: "https://www.coursera.org/account/accomplishments/records/EK71YQYCCF2Y", skills: ["Machine Learning", "AI", "Deep Learning"] },
     { title: "Google Gemini", issuer: "Google Developers", link: "https://developers.google.com/profile/badges/community/gear", skills: ["Generative AI", "Google AI"] },
-    { title: "Active Directory Administration", issuer: "LAB Training", link: "#", skills: ["Windows Server", "AD DS", "GPO", "PowerShell"] }
+    { title: "Active Directory Administration", issuer: "LAB Training", link: "#", skills: ["Windows Server", "AD DS", "GPO", "PowerShell"] },
+    // 🟢 NOUVELLE CERTIFICATION (version anglaise)
+    { 
+      title: "Cybersecurity Defense Analyst Career Path", 
+      issuer: "Cisco", 
+      link: "https://www.credly.com/badges/8222401c-e488-46ff-84c1-69bfd5bdeed2/public_url", 
+      skills: ["Cybersecurity", "Risk Analysis", "Network Defense", "Compliance"] 
+    }
   ]
 }
 

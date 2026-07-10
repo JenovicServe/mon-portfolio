@@ -6,6 +6,9 @@ const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('all')
 
   const projectsData = [
+    // ============================================
+    // PROJET 1 : JADMIN (DevOps)
+    // ============================================
     {
       title: t.projects.jadmin.title,
       description: t.projects.jadmin.description,
@@ -15,6 +18,9 @@ const Projects = () => {
       category: 'devops',
       features: t.projects.jadmin.features
     },
+    // ============================================
+    // PROJET 2 : QUINDAV (Web)
+    // ============================================
     {
       title: t.projects.quindav.title,
       description: t.projects.quindav.description,
@@ -23,6 +29,44 @@ const Projects = () => {
       link: 'https://quindav.netlify.app',
       category: 'web',
       features: t.projects.quindav.features
+    },
+    // ============================================
+    // 🟢 PROJET 3 : EduManage (Full-Stack)
+    // ============================================
+    {
+      title: 'EduManage - Plateforme de Gestion Scolaire',
+      description: 'Application web full-stack pour la gestion complète d\'établissements scolaires.',
+      longDescription: 'Solution conçue pour numériser et centraliser l\'ensemble des opérations d\'un établissement scolaire. Elle offre une authentification multi-rôles (Admin, Professeur, Parent), un CRUD complet pour les élèves, une saisie de notes avec appréciation automatique, et des bulletins consultables en temps réel.',
+      tags: ['React.js', 'Node.js', 'PostgreSQL', 'Supabase', 'Full-Stack'],
+      link: 'https://ecole-gestion-lyart.vercel.app',
+      category: 'web',
+      features: [
+        '🔐 Authentification multi-rôles (Admin, Prof, Parent)',
+        '👨‍🎓 Gestion CRUD des élèves',
+        '📝 Saisie de notes avec appréciation',
+        '📊 Bulletins et moyennes en temps réel',
+        '⚙️ Gestion des classes et matières',
+        '📥 Import Excel'
+      ]
+    },
+    // ============================================
+    // 🟢 PROJET 4 : Global Services (Web)
+    // ============================================
+    {
+      title: 'Global Services - Site Web Professionnel',
+      description: 'Site vitrine et dashboard administrateur pour une entreprise multiservices.',
+      longDescription: 'Conception et développement d\'un site web professionnel complet pour Global Services SARL à Lubumbashi. Le projet inclut un site public de 6 pages dynamiques, un dashboard administrateur pour gérer le contenu (services, projets, équipe), et une interface d\'administration autonome sans compétences techniques requises.',
+      tags: ['Next.js', 'React 19', 'Tailwind CSS', 'Supabase', 'API Routes'],
+      link: 'https://global-services.vercel.app',
+      category: 'web',
+      features: [
+        '🎯 6 pages dynamiques et responsives',
+        '🖥️ Dashboard administrateur complet',
+        '📧 Notifications email automatiques',
+        '🖼️ Upload et gestion d\'images',
+        '🔒 Sécurité avec politiques RLS',
+        '📊 Statistiques des messages'
+      ]
     }
   ]
 
@@ -112,7 +156,7 @@ const ProjectCard = ({ project, t }) => {
                 key={i}
                 className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-md text-xs"
               >
-                ✓ {feature}
+                {feature}
               </span>
             ))}
           </div>

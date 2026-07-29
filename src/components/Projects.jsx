@@ -58,7 +58,7 @@ const Projects = () => {
     {
       title: 'Global Services - Site Web Professionnel',
       description: 'Site vitrine et dashboard administrateur pour une entreprise multiservices.',
-      longDescription: 'Conception et développement d\'un site web professionnel complet pour Global Services SARL à Lubumbashi. Le projet inclut un site public de 6 pages dynamiques, un dashboard administrateur pour gérer le contenu, et une interface d\'administration autonome sans compétences techniques requises.',
+      longDescription: 'Conception et développement d\'un site web professionnel complet pour Global Services SARL à Fungurume. Le projet inclut un site public de 6 pages dynamiques, un dashboard administrateur pour gérer le contenu, et une interface d\'administration autonome sans compétences techniques requises.',
       tags: ['Next.js', 'React 19', 'Tailwind CSS', 'Supabase', 'API Routes'],
       link: '#',
       category: 'web',

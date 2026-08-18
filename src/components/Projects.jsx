@@ -36,63 +36,40 @@ const Projects = () => {
     // PROJET 3 : EduManage (Full-Stack)
     // ============================================
     {
-      title: 'EduManage - Plateforme de Gestion Scolaire',
-      description: 'Application web full-stack pour la gestion complète d\'établissements scolaires.',
-      longDescription: 'Solution conçue pour numériser et centraliser l\'ensemble des opérations d\'un établissement scolaire. Elle offre une authentification multi-rôles (Admin, Professeur, Parent), un CRUD complet pour les élèves, une saisie de notes avec appréciation automatique, et des bulletins consultables en temps réel.',
+      title: t.projects.edumanage.title,
+      description: t.projects.edumanage.description,
+      longDescription: t.projects.edumanage.longDescription,
       tags: ['React.js', 'Node.js', 'PostgreSQL', 'Supabase', 'Full-Stack'],
       link: 'https://ecole-gestion-lyart.vercel.app',
       category: 'web',
       isLocked: false,
-      features: [
-        '🔐 Authentification multi-rôles (Admin, Prof, Parent)',
-        '👨‍🎓 Gestion CRUD des élèves',
-        '📝 Saisie de notes avec appréciation',
-        '📊 Bulletins et moyennes en temps réel',
-        '⚙️ Gestion des classes et matières',
-        '📥 Import Excel'
-      ]
+      features: t.projects.edumanage.features
     },
     // ============================================
     // PROJET 4 : Global Services (Verrouillé 🔒)
     // ============================================
     {
-      title: 'Global Services - Site Web Professionnel',
-      description: 'Site vitrine et dashboard administrateur pour une entreprise multiservices.',
-      longDescription: 'Conception et développement d\'un site web professionnel complet pour Global Services SARL à Lubumbashi. Le projet inclut un site public de 6 pages dynamiques, un dashboard administrateur pour gérer le contenu, et une interface d\'administration autonome sans compétences techniques requises.',
+      title: t.projects.globalServices.title,
+      description: t.projects.globalServices.description,
+      longDescription: t.projects.globalServices.longDescription,
       tags: ['Next.js', 'React 19', 'Tailwind CSS', 'Supabase', 'API Routes'],
       link: '#',
       category: 'web',
       isLocked: true,
-      features: [
-        '🎯 6 pages dynamiques et responsives',
-        '🖥️ Dashboard administrateur complet',
-        '📧 Notifications email automatiques',
-        '🖼️ Upload et gestion d\'images',
-        '🔒 Sécurité avec politiques RLS',
-        '📊 Statistiques des messages'
-      ]
+      features: t.projects.globalServices.features
     },
     // ============================================
-    // 🟢 PROJET 5 : QADOSH COLLECTIF (Full-Stack)
+    // PROJET 5 : QADOSH COLLECTIF (Full-Stack)
     // ============================================
     {
-      title: 'QADOSH COLLECTIF - Plateforme Ministère Gospel',
-      description: 'Plateforme web complète pour un ministère gospel congolais (Célébration & Charity).',
-      longDescription: 'QADOSH COLLECTIF est une plateforme web complète gérant deux entités : QADOSH CÉLÉBRATION (mouvement d\'adoration) et QADOSH CHARITY (bras humanitaire). Le site inclut une gestion avancée des événements, des galeries photos/vidéos, des témoignages validés par admin, un système de dons avec Mobile Money, et un espace administrateur avec CRUD complet sur tous les contenus.',
+      title: t.projects.qadosh.title,
+      description: t.projects.qadosh.description,
+      longDescription: t.projects.qadosh.longDescription,
       tags: ['React.js', 'FastAPI (Python)', 'PostgreSQL', 'Supabase', 'Full-Stack'],
       link: 'https://qadosh-frontend.vercel.app',
       category: 'web',
       isLocked: false,
-      features: [
-        '🏠 Accueil dynamique avec carrousel animé',
-        '🎵 Pages Célébration & Charity dédiées',
-        '📅 Gestion d\'événements multi-photos',
-        '📸 Galerie avec catégories (Célébration/Charity)',
-        '💬 Témoignages avec validation admin',
-        '💰 Contributions Mobile Money (M-Pesa, Airtel, Orange)',
-        '🔐 Espace admin avec CRUD complet',
-        '🌙 Mode sombre/clair'
-      ]
+      features: t.projects.qadosh.features
     }
   ]
 

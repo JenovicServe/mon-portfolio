@@ -58,11 +58,11 @@ const Projects = () => {
     {
       title: 'Global Services - Site Web Professionnel',
       description: 'Site vitrine et dashboard administrateur pour une entreprise multiservices.',
-      longDescription: 'Conception et développement d\'un site web professionnel complet pour Global Services SARL à Fungurume. Le projet inclut un site public de 6 pages dynamiques, un dashboard administrateur pour gérer le contenu, et une interface d\'administration autonome sans compétences techniques requises.',
+      longDescription: 'Conception et développement d\'un site web professionnel complet pour Global Services SARL à Lubumbashi. Le projet inclut un site public de 6 pages dynamiques, un dashboard administrateur pour gérer le contenu, et une interface d\'administration autonome sans compétences techniques requises.',
       tags: ['Next.js', 'React 19', 'Tailwind CSS', 'Supabase', 'API Routes'],
       link: '#',
       category: 'web',
-      isLocked: true,  // 🔒 PROJET VERROUILLÉ
+      isLocked: true,
       features: [
         '🎯 6 pages dynamiques et responsives',
         '🖥️ Dashboard administrateur complet',
@@ -70,6 +70,28 @@ const Projects = () => {
         '🖼️ Upload et gestion d\'images',
         '🔒 Sécurité avec politiques RLS',
         '📊 Statistiques des messages'
+      ]
+    },
+    // ============================================
+    // 🟢 PROJET 5 : QADOSH COLLECTIF (Full-Stack)
+    // ============================================
+    {
+      title: 'QADOSH COLLECTIF - Plateforme Ministère Gospel',
+      description: 'Plateforme web complète pour un ministère gospel congolais (Célébration & Charity).',
+      longDescription: 'QADOSH COLLECTIF est une plateforme web complète gérant deux entités : QADOSH CÉLÉBRATION (mouvement d\'adoration) et QADOSH CHARITY (bras humanitaire). Le site inclut une gestion avancée des événements, des galeries photos/vidéos, des témoignages validés par admin, un système de dons avec Mobile Money, et un espace administrateur avec CRUD complet sur tous les contenus.',
+      tags: ['React.js', 'FastAPI (Python)', 'PostgreSQL', 'Supabase', 'Full-Stack'],
+      link: 'https://qadosh-frontend.vercel.app',
+      category: 'web',
+      isLocked: false,
+      features: [
+        '🏠 Accueil dynamique avec carrousel animé',
+        '🎵 Pages Célébration & Charity dédiées',
+        '📅 Gestion d\'événements multi-photos',
+        '📸 Galerie avec catégories (Célébration/Charity)',
+        '💬 Témoignages avec validation admin',
+        '💰 Contributions Mobile Money (M-Pesa, Airtel, Orange)',
+        '🔐 Espace admin avec CRUD complet',
+        '🌙 Mode sombre/clair'
       ]
     }
   ]
@@ -188,7 +210,6 @@ const ProjectCard = ({ project, t }) => {
         
         <div className="flex gap-4">
           {project.isLocked ? (
-            // 🔒 Bouton verrouillé
             <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-300 dark:bg-gray-700 text-gray-500 dark:text-gray-400 rounded-lg cursor-not-allowed font-medium">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -196,7 +217,6 @@ const ProjectCard = ({ project, t }) => {
               Accès restreint
             </div>
           ) : (
-            // ✅ Bouton normal
             <a
               href={project.link}
               target="_blank"

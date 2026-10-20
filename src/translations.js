@@ -1,6 +1,5 @@
 export const translations = {
   fr: {
-    // Navbar
     nav: {
       home: 'Accueil',
       about: 'À propos',
@@ -9,7 +8,6 @@ export const translations = {
       certifications: 'Certifications',
       contact: 'Contact'
     },
-    // Hero
     hero: {
       title: 'Jenovic Kanyinda',
       roles: [
@@ -22,7 +20,6 @@ export const translations = {
       contactBtn: 'Me contacter',
       projectsBtn: 'Voir mes réalisations'
     },
-    // About
     about: {
       title: 'À propos de moi',
       intro: 'Je suis',
@@ -37,7 +34,6 @@ export const translations = {
       resolved: 'Résolus pour particuliers et PME',
       firstIntervention: 'En première intervention'
     },
-    // Projects
     projects: {
       title: 'Mes Réalisations',
       filters: {
@@ -51,21 +47,18 @@ export const translations = {
       features: 'Fonctionnalités clés',
       viewProject: 'Voir le projet',
       
-      // Projet 1
       jadmin: {
         title: 'JADMIN - Professional Network Toolkit',
         description: 'Calculateur IP cloud complet pour ingénieurs réseau',
         longDescription: 'Solution SaaS de calcul d\'adressage réseau : sous-réseaux IPv4/IPv6, découpage VLSM automatique avec sélection de classe A/B/C, agrégation de réseaux (Supernet). Interface moderne avec dark/light mode, tests automatisés CI/CD, déploiement Docker.',
         features: ['Calculateur IP complet', 'Support IPv4/IPv6', 'Découpage VLSM automatique', 'Agrégation de réseaux', 'Dark/Light mode', 'Tests CI/CD automatisés']
       },
-      // Projet 2
       quindav: {
         title: 'QUINDAV - Réservation matériaux de construction',
         description: 'Plateforme de réservation en ligne pour matériaux de construction',
         longDescription: 'Solution digitale permettant aux clients de consulter le catalogue (vitres, carreaux, serrures, colles, équipements électriques) et d\'effectuer des réservations en ligne.',
         features: ['Catalogue de produits', 'Réservation en ligne', 'Interface responsive', 'Gestion des stocks']
       },
-      // Projet 3 : EduManage (🟢 NOUVEAU)
       edumanage: {
         title: 'EduManage - Plateforme de Gestion Scolaire',
         description: 'Application web full-stack pour la gestion complète d\'établissements scolaires.',
@@ -79,21 +72,23 @@ export const translations = {
           '📥 Import Excel'
         ]
       },
-      // Projet 4 : Global Services (🟢 NOUVEAU)
       globalServices: {
-        title: 'Global Services - Site Web Professionnel',
-        description: 'Site vitrine et dashboard administrateur pour une entreprise multiservices.',
-        longDescription: 'Conception et développement d\'un site web professionnel complet pour Global Services SARL à Lubumbashi. Le projet inclut un site public de 6 pages dynamiques, un dashboard administrateur pour gérer le contenu, et une interface d\'administration autonome sans compétences techniques requises.',
+        title: 'Global Services One - Site Web & CMS Sur Mesure',
+        description: 'Site vitrine dynamique avec back-office complet pour une entreprise multi-services en RDC.',
+        longDescription: 'Refonte et développement d\'un site web moderne pour Global Services One (électrification, plomberie, construction, web, impression, décoration, soudure). Le projet inclut un CMS sur mesure permettant au client de gérer tout son contenu en autonomie : services, projets, équipe, partenaires, offres d\'emploi. Un back-office sécurisé avec upload d\'images compressées, gestion des CV, et envoi d\'emails transactionnels via Resend.',
         features: [
-          '🎯 6 pages dynamiques et responsives',
-          '🖥️ Dashboard administrateur complet',
-          '📧 Notifications email automatiques',
-          '🖼️ Upload et gestion d\'images',
-          '🔒 Sécurité avec politiques RLS',
-          '📊 Statistiques des messages'
+          '🖥️ CMS sur mesure avec back-office sécurisé',
+          '📸 Upload d\'images avec compression WebP automatique',
+          '📄 Gestion des CV (PDF) et candidatures',
+          '📧 Emails transactionnels via Resend API',
+          '🔒 Authentification par cookies HTTPOnly',
+          '🌙 Mode sombre/clair',
+          '📱 Design responsive',
+          '🔍 SEO optimisé (Meta dynamiques, Sitemap, Robots.txt)',
+          '🍪 Bandeau cookies RGPD',
+          '⚡ Performance optimisée (Next.js, lazy loading)'
         ]
       },
-      // Projet 5 : QADOSH COLLECTIF (🟢 NOUVEAU)
       qadosh: {
         title: 'QADOSH COLLECTIF - Plateforme Ministère Gospel',
         description: 'Plateforme web complète pour un ministère gospel congolais (Célébration & Charity).',
@@ -110,7 +105,6 @@ export const translations = {
         ]
       }
     },
-    // Skills
     skills: {
       title: 'Compétences Techniques',
       categories: {
@@ -119,12 +113,10 @@ export const translations = {
         dev: 'Développement & Outils'
       }
     },
-    // Certifications
     certifications: {
       title: 'Certifications',
       view: 'Voir la certification'
     },
-    // Contact
     contact: {
       title: 'Me contacter',
       subtitle: 'Discutons de vos projets',
@@ -135,17 +127,12 @@ export const translations = {
       contactText: 'Cliquez sur mon email ou mon numéro WhatsApp pour me contacter directement. Je réponds dans les meilleurs délais !',
       findMe: 'Retrouvez-moi sur'
     },
-    // Footer
     footer: {
       rights: 'Tous droits réservés'
     }
   },
 
-  // ============================================================
-  // VERSION ANGLAISE
-  // ============================================================
   en: {
-    // Navbar
     nav: {
       home: 'Home',
       about: 'About',
@@ -154,7 +141,6 @@ export const translations = {
       certifications: 'Certifications',
       contact: 'Contact'
     },
-    // Hero
     hero: {
       title: 'Jenovic Kanyinda',
       roles: [
@@ -167,7 +153,6 @@ export const translations = {
       contactBtn: 'Contact me',
       projectsBtn: 'View my work'
     },
-    // About
     about: {
       title: 'About me',
       intro: 'I am',
@@ -182,7 +167,6 @@ export const translations = {
       resolved: 'Resolved for individuals and SMEs',
       firstIntervention: 'On first intervention'
     },
-    // Projects
     projects: {
       title: 'My Work',
       filters: {
@@ -196,21 +180,18 @@ export const translations = {
       features: 'Key features',
       viewProject: 'View project',
       
-      // Projet 1
       jadmin: {
         title: 'JADMIN - Professional Network Toolkit',
         description: 'Complete cloud IP calculator for network engineers',
         longDescription: 'SaaS solution for network addressing: IPv4/IPv6 subnets, automatic VLSM with class A/B/C selection, route aggregation (Supernet). Modern interface with dark/light mode, CI/CD automated tests, Docker deployment.',
         features: ['Complete IP calculator', 'IPv4/IPv6 support', 'Automatic VLSM', 'Route aggregation', 'Dark/Light mode', 'CI/CD automated tests']
       },
-      // Projet 2
       quindav: {
         title: 'QUINDAV - Building materials booking',
         description: 'Online booking platform for construction materials',
         longDescription: 'Digital solution allowing customers to browse the catalog (glass, tiles, locks, adhesives, electrical equipment) and make online reservations.',
         features: ['Product catalog', 'Online booking', 'Responsive interface', 'Inventory management']
       },
-      // Projet 3 : EduManage (🟢 NOUVEAU)
       edumanage: {
         title: 'EduManage - School Management Platform',
         description: 'Full-stack web application for complete school management.',
@@ -224,21 +205,23 @@ export const translations = {
           '📥 Excel import'
         ]
       },
-      // Projet 4 : Global Services (🟢 NOUVEAU)
       globalServices: {
-        title: 'Global Services - Professional Website',
-        description: 'Corporate website and admin dashboard for a multi-service company.',
-        longDescription: 'Design and development of a complete professional website for Global Services SARL in Lubumbashi. The project includes a 6-page dynamic public site, an admin dashboard to manage content, and an autonomous administration interface with no technical skills required.',
+        title: 'Global Services One - Custom Website & CMS',
+        description: 'Dynamic showcase website with full back-office for a multi-service company in DRC.',
+        longDescription: 'Redesign and development of a modern website for Global Services One (electrification, plumbing, construction, web, printing, decoration, welding). The project includes a custom CMS allowing the client to manage all content autonomously: services, projects, team, partners, job offers. A secure back-office with compressed image upload, CV management, and transactional emails via Resend.',
         features: [
-          '🎯 6 dynamic and responsive pages',
-          '🖥️ Complete admin dashboard',
-          '📧 Automatic email notifications',
-          '🖼️ Image upload and management',
-          '🔒 Security with RLS policies',
-          '📊 Message statistics'
+          '🖥️ Custom CMS with secure back-office',
+          '📸 Image upload with automatic WebP compression',
+          '📄 CV (PDF) and application management',
+          '📧 Transactional emails via Resend API',
+          '🔒 HTTPOnly cookie authentication',
+          '🌙 Dark/Light mode',
+          '📱 Responsive design',
+          '🔍 Optimized SEO (Dynamic Meta, Sitemap, Robots.txt)',
+          '🍪 GDPR cookie banner',
+          '⚡ Optimized performance (Next.js, lazy loading)'
         ]
       },
-      // Projet 5 : QADOSH COLLECTIF (🟢 NOUVEAU)
       qadosh: {
         title: 'QADOSH COLLECTIF - Gospel Ministry Platform',
         description: 'Complete web platform for a Congolese gospel ministry (Celebration & Charity).',
@@ -255,7 +238,6 @@ export const translations = {
         ]
       }
     },
-    // Skills
     skills: {
       title: 'Technical Skills',
       categories: {
@@ -264,12 +246,10 @@ export const translations = {
         dev: 'Development & Tools'
       }
     },
-    // Certifications
     certifications: {
       title: 'Certifications',
       view: 'View certification'
     },
-    // Contact
     contact: {
       title: 'Contact me',
       subtitle: "Let's discuss your projects",
@@ -280,7 +260,6 @@ export const translations = {
       contactText: 'Click on my email or WhatsApp number to contact me directly. I will respond as soon as possible!',
       findMe: 'Find me on'
     },
-    // Footer
     footer: {
       rights: 'All rights reserved'
     }

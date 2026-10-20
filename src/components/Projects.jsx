@@ -46,16 +46,16 @@ const Projects = () => {
       features: t.projects.edumanage.features
     },
     // ============================================
-    // PROJET 4 : Global Services (Verrouillé 🔒)
+    // PROJET 4 : Global Services One (Web) - DÉVERROUILLÉ
     // ============================================
     {
       title: t.projects.globalServices.title,
       description: t.projects.globalServices.description,
       longDescription: t.projects.globalServices.longDescription,
-      tags: ['Next.js', 'React 19', 'Tailwind CSS', 'Supabase', 'API Routes'],
-      link: '#',
+      tags: ['Next.js', 'React.js', 'Tailwind CSS v4', 'Supabase', 'Resend API'],
+      link: 'https://www.gsonerdc.com',
       category: 'web',
-      isLocked: true,
+      isLocked: false,
       features: t.projects.globalServices.features
     },
     // ============================================
@@ -128,28 +128,19 @@ const Projects = () => {
 
 const ProjectCard = ({ project, t }) => {
   return (
-    <div className={`bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border ${
-      project.isLocked ? 'border-yellow-500 dark:border-yellow-600' : 'border-gray-200 dark:border-gray-700'
-    }`}>
+    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700">
       <div className="p-8">
         <div className="flex justify-between items-start mb-4">
           <h3 className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">
             {project.title}
           </h3>
-          <div className="flex items-center gap-2">
-            {project.isLocked && (
-              <span className="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 rounded-full text-xs font-medium">
-                🔒 En attente
-              </span>
-            )}
-            <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-              project.category === 'devops' 
-                ? 'bg-emerald-100 dark:bg-emerald-900 text-emerald-600 dark:text-emerald-300'
-                : 'bg-teal-100 dark:bg-teal-900 text-teal-600 dark:text-teal-300'
-            }`}>
-              {project.category === 'devops' ? 'DevOps' : 'Web'}
-            </span>
-          </div>
+          <span className={`px-3 py-1 rounded-full text-sm font-medium ${
+            project.category === 'devops' 
+              ? 'bg-emerald-100 dark:bg-emerald-900 text-emerald-600 dark:text-emerald-300'
+              : 'bg-teal-100 dark:bg-teal-900 text-teal-600 dark:text-teal-300'
+          }`}>
+            {project.category === 'devops' ? 'DevOps' : 'Web'}
+          </span>
         </div>
         
         <p className="text-gray-600 dark:text-gray-300 mb-3 font-medium">
@@ -186,26 +177,17 @@ const ProjectCard = ({ project, t }) => {
         </div>
         
         <div className="flex gap-4">
-          {project.isLocked ? (
-            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-300 dark:bg-gray-700 text-gray-500 dark:text-gray-400 rounded-lg cursor-not-allowed font-medium">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-              </svg>
-              Accès restreint
-            </div>
-          ) : (
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-medium"
-            >
-              {t.projects.viewProject}
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
-          )}
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-medium"
+          >
+            {t.projects.viewProject}
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
         </div>
       </div>
     </div>
